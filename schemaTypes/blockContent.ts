@@ -67,5 +67,18 @@ export default defineType({
         }
       ]
     }),
+    defineArrayMember({
+      title: 'Twitter Embed',
+      name: 'twitterEmbed',
+      type: 'object',
+      fields: [
+        {
+          title: 'Twitter Post URL',
+          name: 'url',
+          type: 'url',
+          description: 'URL of the Twitter post to embed',
+        },
+      ],
+    }),
   ],
 })
